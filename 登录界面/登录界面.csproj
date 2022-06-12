@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B4AF02A-1EE1-47EC-B368-A0A5CDDA80A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>登录界面</RootNamespace>
+    <AssemblyName>登录界面</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="dl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dl.Designer.cs">
+      <DependentUpon>dl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="zhuchejiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zhuchejiem.Designer.cs">
+      <DependentUpon>zhuchejiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zhujiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zhujiem.Designer.cs">
+      <DependentUpon>zhujiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moniditxf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moniditxf.Designer.cs">
+      <DependentUpon>moniditxf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiaofeijilucx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiaofeijilucx.Designer.cs">
+      <DependentUpon>xiaofeijilucx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yhzbxxgli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yhzbxxgli.Designer.cs">
+      <DependentUpon>yhzbxxgli.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dl.resx">
+      <DependentUpon>dl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="zhuchejiem.resx">
+      <DependentUpon>zhuchejiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhujiem.resx">
+      <DependentUpon>zhujiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moniditxf.resx">
+      <DependentUpon>moniditxf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiaofeijilucx.resx">
+      <DependentUpon>xiaofeijilucx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yhzbxxgli.resx">
+      <DependentUpon>yhzbxxgli.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20b2OOOPICac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出图标.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信息管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\225G02217-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-iurhteikzqk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01238d3a979a932e76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14-1512311125594L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\模拟地铁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\模拟地铁1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信息管理1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01a39864e86c3e7a81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jianyuetuantaobaobeijingtupian_5405289.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3055816_121030027652_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t012bce259a55fd234a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63b1OOOPICee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20080405144414605.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08N58PICGYn_1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb363fe62368365bc95ec483e31deec36f794fe7b644d-GS3nzj_fw658.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f8536545c54efcc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f8536545c54efcc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\原型图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f8536545c54efcc - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f8536545c54efcc - 副本 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apic7646_sc115.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4e646de948db3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
