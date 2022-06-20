@@ -34,6 +34,7 @@ namespace 登录界面
             {
                 zhujiem zujiem = new zhujiem();
                 zujiem.Show();
+                this.Hide();
             }
                 //提示用户的账户或者密码不正确
             else

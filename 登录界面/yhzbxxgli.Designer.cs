@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(yhzbxxgli));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -109,7 +110,7 @@
             // yhkh
             // 
             this.yhkh.Location = new System.Drawing.Point(153, 45);
-            this.yhkh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yhkh.Margin = new System.Windows.Forms.Padding(4);
             this.yhkh.MaxLength = 5;
             this.yhkh.Name = "yhkh";
             this.yhkh.Size = new System.Drawing.Size(132, 25);
@@ -118,7 +119,7 @@
             // yhxm
             // 
             this.yhxm.Location = new System.Drawing.Point(392, 44);
-            this.yhxm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yhxm.Margin = new System.Windows.Forms.Padding(4);
             this.yhxm.Name = "yhxm";
             this.yhxm.Size = new System.Drawing.Size(132, 25);
             this.yhxm.TabIndex = 6;
@@ -131,7 +132,7 @@
             "男",
             "女"});
             this.yhxb.Location = new System.Drawing.Point(625, 44);
-            this.yhxb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yhxb.Margin = new System.Windows.Forms.Padding(4);
             this.yhxb.Name = "yhxb";
             this.yhxb.Size = new System.Drawing.Size(79, 23);
             this.yhxb.TabIndex = 7;
@@ -140,7 +141,7 @@
             // yhnl
             // 
             this.yhnl.Location = new System.Drawing.Point(153, 121);
-            this.yhnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yhnl.Margin = new System.Windows.Forms.Padding(4);
             this.yhnl.Name = "yhnl";
             this.yhnl.Size = new System.Drawing.Size(132, 25);
             this.yhnl.TabIndex = 8;
@@ -148,7 +149,7 @@
             // chusje
             // 
             this.chusje.Location = new System.Drawing.Point(392, 120);
-            this.chusje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chusje.Margin = new System.Windows.Forms.Padding(4);
             this.chusje.Name = "chusje";
             this.chusje.ReadOnly = true;
             this.chusje.Size = new System.Drawing.Size(132, 25);
@@ -160,7 +161,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(153, 192);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 29);
             this.button1.TabIndex = 10;
@@ -182,7 +183,7 @@
             // yhxingm
             // 
             this.yhxingm.Location = new System.Drawing.Point(157, 274);
-            this.yhxingm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yhxingm.Margin = new System.Windows.Forms.Padding(4);
             this.yhxingm.Name = "yhxingm";
             this.yhxingm.Size = new System.Drawing.Size(132, 25);
             this.yhxingm.TabIndex = 12;
@@ -191,7 +192,7 @@
             // 
             this.ZX市.BackColor = System.Drawing.Color.Transparent;
             this.ZX市.Location = new System.Drawing.Point(341, 268);
-            this.ZX市.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ZX市.Margin = new System.Windows.Forms.Padding(4);
             this.ZX市.Name = "ZX市";
             this.ZX市.Size = new System.Drawing.Size(100, 29);
             this.ZX市.TabIndex = 13;
@@ -203,7 +204,7 @@
             // 
             this.dgv_userInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_userInfo.Location = new System.Drawing.Point(13, 310);
-            this.dgv_userInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_userInfo.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_userInfo.MultiSelect = false;
             this.dgv_userInfo.Name = "dgv_userInfo";
             this.dgv_userInfo.RowHeadersWidth = 51;
@@ -241,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::登录界面.Properties.Resources.jianyuetuantaobaobeijingtupian_5405289;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(767, 522);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.dateTimePicker1);
@@ -261,7 +262,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "yhzbxxgli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户基本信息管理";
