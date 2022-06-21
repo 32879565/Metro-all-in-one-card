@@ -90,14 +90,14 @@ namespace 登录界面
         //删除用户信息
         private void 删除ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string sqlAdd = string.Format("delete from Type where Name='" + yhxingm.Text + "' ");
+            string sqlAdd = string.Format("delete  from ID where name='" + yhxingm.Text + "' ");
             bool add = DBHelper.ExecuteNonQuery(sqlAdd);
             //提示用户信息是否删除成功
             if (add)
                 MessageBox.Show("删除成功!");
             else
                 MessageBox.Show("删除失败!");
-            string stQuery = @"select name 姓名,kahao 卡号,sex 性别,age 年龄,jine 金额 from Type";
+            string stQuery = @"select name 姓名,kahao 卡号,sex 性别,age 年龄,jine 金额 from ID";
             DataTable dt = new DataTable();
             dt = DBHelper.ExcuteQuery(stQuery);
             dgv_userInfo.DataSource = dt;
